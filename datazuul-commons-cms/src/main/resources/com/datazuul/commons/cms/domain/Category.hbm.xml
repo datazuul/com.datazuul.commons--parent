@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+	<class name="de.javapro.netcms.domain.Category" table="CATEGORIES">
+		<id name="id" column="ID" type="long" unsaved-value="0">
+			<generator class="increment">
+				<!--
+					To add non XDoclet generator parameters, create a file named
+					hibernate-generator-params-Category.xml containing the additional
+					parameters and place it in your merge dir.
+				-->
+			</generator>
+		</id>
+		<many-to-one name="parent" class="de.javapro.netcms.domain.Category"
+			cascade="none" outer-join="auto" update="true" insert="true" column="PARENTID" />
+		<property name="name" type="java.lang.String" update="true"
+			insert="true" column="NAME" />
+		<bag name="subcategories" table="CATEGORY" lazy="true" inverse="true"
+			cascade="delete">
+			<key column="PARENTID">
+			</key>
+			<one-to-many class="de.javapro.netcms.domain.Category" />
+		</bag>
+		<!--
+			To add non XDoclet property mappings, create a file named
+			hibernate-properties-Category.xml containing the additional
+			properties and place it in your merge dir.
+		-->
+	</class>
+</hibernate-mapping>

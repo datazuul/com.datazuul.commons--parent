@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 2.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+	<class name="de.javapro.netcms.domain.Author" table="AUTHORS">
+		<id name="id" column="ID" type="long" unsaved-value="0">
+			<generator class="increment">
+				<!--
+					To add non XDoclet generator parameters, create a file named
+					hibernate-generator-params-Author.xml containing the additional
+					parameters and place it in your merge dir.
+				-->
+			</generator>
+		</id>
+		<property name="dayOfBirth" type="java.lang.String" update="true"
+			insert="true" column="DAYOFBIRTH" length="15" />
+		<property name="dayOfDeath" type="java.lang.String" update="true"
+			insert="true" column="DAYOFDEATH" length="15" />
+		<property name="firstname" type="java.lang.String" update="true"
+			insert="true" column="FIRSTNAME" length="50" />
+		<property name="surname" type="java.lang.String" update="true"
+			insert="true" column="SURNAME" length="50" />
+		<!--
+			To add non XDoclet property mappings, create a file named
+			hibernate-properties-Author.xml containing the additional properties
+			and place it in your merge dir.
+		-->
+	</class>
+</hibernate-mapping>

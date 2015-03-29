@@ -1,0 +1,5 @@
+<configuration>
+	<field type="Handle" fieldName="handle" attributeName="id" />
+	<field type="Text" fieldName="firstname" attributeName="firstname" />
+	<field type="Text" fieldName="surname" attributeName="surname" />
+</configuration>
