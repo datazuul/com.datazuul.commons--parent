@@ -7,7 +7,4 @@ Data is available in several formats. As we deal with a format, this library wil
 
 ## RDF/XML
 The RDF/XML file will be parsed using StAX following the [introduction to StAX](https://docs.oracle.com/javase/tutorial/jaxp/stax/).
-Parsing is done using the iterator API, because as the tutorial states:
-
-"In general, if you do not have a strong preference one way or the other, using the iterator API is recommended because it is more flexible and extensible, thereby 'future-proofing' your applications."
-
+Parsing is done using the Cursor API in combination with JDOM for handling detected description fragments.
