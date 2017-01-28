@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:gndo="http://d-nb.info/standards/elementset/gnd#"
+  xmlns:lib="http://purl.org/library/"
+  xmlns:marcRole="http://id.loc.gov/vocabulary/relators/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:geo="http://www.opengis.net/ont/geosparql#"
+  xmlns:umbel="http://umbel.org/umbel#"
+  xmlns:dbp="http://dbpedia.org/property/"
+  xmlns:dnbt="http://d-nb.info/standards/elementset/dnb#"
+  xmlns:rdau="http://rdaregistry.info/Elements/u/"
+  xmlns:sf="http://www.opengis.net/ont/sf#"
+  xmlns:dnb_intern="http://dnb.de/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:v="http://www.w3.org/2006/vcard/ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:bibo="http://purl.org/ontology/bibo/"
+  xmlns:gbv="http://purl.org/ontology/gbv/"
+  xmlns:isbd="http://iflastandards.info/ns/isbd/elements/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+  <!-- EndOfRecordNr: 1288 -->
+  <rdf:Description rdf:about="http://d-nb.info/gnd/100000193">
+    <rdf:type rdf:resource="http://d-nb.info/standards/elementset/gnd#DifferentiatedPerson"/>
+    <owl:sameAs rdf:resource="http://viaf.org/viaf/32334419"/>
+    <gndo:gndIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100000193</gndo:gndIdentifier>
+    <gndo:oldAuthorityNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(DE-588a)100000193</gndo:oldAuthorityNumber>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Johanes Gottfried</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560682">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johanes Gottfried</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauerus, Johannes Godofredus</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560683">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johannes Godofredus</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauerus</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Johannes Gothofredus</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560684">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johannes Gothofredus</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Johannes Gottofredus</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560685">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johannes Gottofredus</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Iohannes Godofredus</gndo:variantNameForThePerson>
+    <gndo:preferredNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Johann Gottfried</gndo:preferredNameForThePerson>
+    <gndo:preferredNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560694">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johann Gottfried</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer</gndo:surname>
+      </rdf:Description>
+    </gndo:preferredNameEntityForThePerson>
+    <gndo:familialRelationship rdf:resource="http://d-nb.info/gnd/121453839"/>
+    <gndo:professionOrOccupation rdf:resource="http://d-nb.info/gnd/4029050-5"/>
+    <gndo:academicDegree rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Professor</gndo:academicDegree>
+    <gndo:geographicAreaCode rdf:resource="http://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DE"/>
+    <gndo:publication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rechenberg, Karl Otto: Institutionum iurisprudentiae naturalis  Lib. II.,  Tit.  1  -  4  ... - 1712</gndo:publication>
+    <gndo:publication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Johann Gottfried : Dissertatio inauguralis de aestimandis et restituendis fructibus, ad dec. nov. II. - 1753</gndo:publication>
+    <gndo:publication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Johann Gottfried : Dissertatio inauguralis de pacto remissorio ante concursum formalem in foro Saxoniae electoralis. - 1755</gndo:publication>
+    <gndo:biographicalOrHistoricalInformation xml:lang="de">Ordinarius an der jurist. Fakultät der Univ. Leipzig</gndo:biographicalOrHistoricalInformation>
+    <gndo:biographicalOrHistoricalInformation xml:lang="de">Jurist</gndo:biographicalOrHistoricalInformation>
+    <gndo:placeOfBirth rdf:resource="http://d-nb.info/gnd/4035206-7"/>
+    <gndo:placeOfDeath rdf:resource="http://d-nb.info/gnd/4035206-7"/>
+    <gndo:placeOfActivity rdf:resource="http://d-nb.info/gnd/4035206-7"/>
+    <gndo:placeOfActivity rdf:resource="http://d-nb.info/gnd/4038749-5"/>
+    <gndo:gender rdf:resource="http://d-nb.info/standards/vocab/gnd/gender#male"/>
+    <gndo:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1695-02-20</gndo:dateOfBirth>
+    <gndo:dateOfDeath rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1763-03-02</gndo:dateOfDeath>
+  </rdf:Description>
+  <!-- EndOfRecordNr: 1289 -->
+  <rdf:Description rdf:about="http://d-nb.info/gnd/100000207">
+    <rdf:type rdf:resource="http://d-nb.info/standards/elementset/gnd#UndifferentiatedPerson"/>
+    <gndo:gndIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100000207</gndo:gndIdentifier>
+    <owl:sameAs rdf:resource="http://viaf.org/viaf/61888837"/>
+    <gndo:oldAuthorityNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(DE-588a)100000207</gndo:oldAuthorityNumber>
+    <gndo:preferredNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Johann K.</gndo:preferredNameForThePerson>
+    <gndo:preferredNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560695">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johann K.</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer</gndo:surname>
+      </rdf:Description>
+    </gndo:preferredNameEntityForThePerson>
+    <gndo:publication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Johann K.: Gesangbuch für die häusliche Gottesverehrung. - 1807</gndo:publication>
+  </rdf:Description>
+  <!-- EndOfRecordNr: 1290 -->
+  <rdf:Description rdf:about="http://d-nb.info/gnd/100000231">
+    <rdf:type rdf:resource="http://d-nb.info/standards/elementset/gnd#DifferentiatedPerson"/>
+    <foaf:page rdf:resource="http://de.wikipedia.org/wiki/Johann_Wilhelm_Baur"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Johann_Wilhelm_Baur"/>
+    <owl:sameAs rdf:resource="http://viaf.org/viaf/66737403"/>
+    <gndo:gndIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100000231</gndo:gndIdentifier>
+    <gndo:oldAuthorityNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(DE-588a)100000231</gndo:oldAuthorityNumber>
+    <gndo:oldAuthorityNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(DE-588c)4495254-5</gndo:oldAuthorityNumber>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baur, W.</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560696">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W.</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baur</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baur, Johannes Guilielmus</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560697">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johannes Guilielmus</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baur</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baur, Wilhelm</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560698">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wilhelm</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baur</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Wilhelm</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560699">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wilhelm</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Johann Wilhelm</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560700">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johann Wilhelm</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baur, Joannes Guilielmus</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560701">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joannes Guilielmus</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baur</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baur, Johannes Wilhelm</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560702">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johannes Wilhelm</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baur</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Johannes Wilhelm</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560703">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johannes Wilhelm</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Johann Wilhlem</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560704">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johann Wilhlem</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paur, Johann Wilhelm</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560705">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johann Wilhelm</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paur</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:variantNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baurn, Johannes Guilelmus</gndo:variantNameForThePerson>
+    <gndo:variantNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560706">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johannes Guilelmus</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baurn</gndo:surname>
+      </rdf:Description>
+    </gndo:variantNameEntityForThePerson>
+    <gndo:preferredNameForThePerson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baur, Johann Wilhelm</gndo:preferredNameForThePerson>
+    <gndo:preferredNameEntityForThePerson>
+      <rdf:Description rdf:nodeID="node1aus1paf4x1560707">
+        <gndo:forename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johann Wilhelm</gndo:forename>
+        <gndo:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baur</gndo:surname>
+      </rdf:Description>
+    </gndo:preferredNameEntityForThePerson>
+    <gndo:professionOrOccupation rdf:resource="http://d-nb.info/gnd/4037215-7"/>
+    <gndo:professionOrOccupation rdf:resource="http://d-nb.info/gnd/4176793-7"/>
+    <gndo:gndSubjectCategory rdf:resource="http://d-nb.info/standards/vocab/gnd/gnd-sc#13.4p"/>
+    <gndo:geographicAreaCode rdf:resource="http://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-FR"/>
+    <gndo:geographicAreaCode rdf:resource="http://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DE"/>
+    <gndo:geographicAreaCode rdf:resource="http://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-AT"/>
+    <gndo:publication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iconographia</gndo:publication>
+    <gndo:publication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Des vortrefflichen römischen Poetens Publii Ovidii Nasonis ... - 1709</gndo:publication>
+    <gndo:publication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ovidii Metamorphosis oder Verwandelungs Bücher. - [1641]</gndo:publication>
+    <gndo:publication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ovid's Verwandlungen. - [1639]</gndo:publication>
+    <gndo:publication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Der Spanisch-Niederländische Krieg</gndo:publication>
+    <gndo:publication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Wilhelm: Ovidische Verwandlungen. - 1641</gndo:publication>
+    <gndo:publication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bauer, Wilhelm: Unterschiedliche Prospecten, in Italien nach den Leben gezeichnet. - 1681</gndo:publication>
+    <gndo:biographicalOrHistoricalInformation xml:lang="de">Dt. Radierer und Miniaturmaler</gndo:biographicalOrHistoricalInformation>
+    <gndo:biographicalOrHistoricalInformation xml:lang="de">Maler</gndo:biographicalOrHistoricalInformation>
+    <gndo:placeOfBirth rdf:resource="http://d-nb.info/gnd/4057878-1"/>
+    <gndo:placeOfDeath rdf:resource="http://d-nb.info/gnd/4066009-6"/>
+    <gndo:gender rdf:resource="http://d-nb.info/standards/vocab/gnd/gender#male"/>
+    <gndo:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1600</gndo:dateOfBirth>
+    <gndo:dateOfDeath rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1642</gndo:dateOfDeath>
+  </rdf:Description>
+  <!-- EndOfRecordNr: 1291 -->
+
+</rdf:RDF>

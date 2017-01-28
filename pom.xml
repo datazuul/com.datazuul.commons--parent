@@ -4,8 +4,9 @@
     <artifactId>parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>datazuul.com - DataZuul Commons: Parent Project</name>
+    <name>datazuul.com - DataZuul Commons</name>
     <modules>
         <module>datazuul-commons-cms</module>
+        <module>datazuul-commons-gnd</module>
     </modules>
 </project>
