@@ -123,6 +123,19 @@ public class GndRdfXmlParser {
     String dateOfDeath = description.getChildText("dateOfDeath", NS_GNDO);
     person.setDateOfDeath(dateOfDeath);
 
-    System.out.println("DifferentiatedPerson: " + person);
+    if (person.getFirstname() == null && person.getSurname() == null) {
+      // may be an organisation and no person
+    } else {
+      handleDifferentiatedPerson(person);
+    }
+  }
+  
+  /**
+   * Overridable method for further processing of a differentiated person.
+   * Default: just print data to system out...
+   * @param differentiatedPerson a differentiated person
+   */
+  public void handleDifferentiatedPerson(DifferentiatedPerson differentiatedPerson) {
+    System.out.println("DifferentiatedPerson: " + differentiatedPerson);
   }
 }

@@ -43,7 +43,7 @@ public class GndRdfXmlParserTest {
     instance.parse(is);
   }
   
-  @Ignore
+//  @Ignore
   @Test
   public void testParseOfBigFile() throws Exception {
     System.out.println("parse big file");
