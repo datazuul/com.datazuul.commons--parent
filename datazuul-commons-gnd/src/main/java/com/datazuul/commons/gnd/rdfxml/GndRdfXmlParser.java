@@ -88,11 +88,19 @@ public class GndRdfXmlParser {
           handleDifferentiatedPerson(descriptionElement);
           break;
         default:
-//        System.err.println("Unknown description type " + type);
+          //System.err.println("Unknown description type " + type);
+          /*
+          http://purl.org/ontology/bibo/Collection
+          http://purl.org/ontology/bibo/Document
+          http://purl.org/ontology/bibo/Map
+          http://purl.org/ontology/bibo/Periodical
+          http://vivoweb.org/ontology/core#Score
+          http://purl.org/ontology/bibo/Series
+          */
           break;
       }
     } else {
-      System.err.println(descriptionElement.toString());
+      System.err.println(descriptionElement.getName());
     }
   }
 
@@ -119,17 +127,36 @@ public class GndRdfXmlParser {
     String dateOfBirth = description.getChildText("dateOfBirth", NS_GNDO);
     person.setDateOfBirth(dateOfBirth);
 
+    Element placeOfBirth = description.getChild("placeOfBirth", NS_GNDO);
+    if (placeOfBirth != null) {
+      person.setPlaceOfBirthUrl(placeOfBirth.getAttributeValue("resource", NS_RDF));
+    }
+
     // death
     String dateOfDeath = description.getChildText("dateOfDeath", NS_GNDO);
     person.setDateOfDeath(dateOfDeath);
 
+    Element placeOfDeath = description.getChild("placeOfDeath", NS_GNDO);
+    if (placeOfDeath != null) {
+      person.setPlaceOfDeathUrl(placeOfDeath.getAttributeValue("resource", NS_RDF));
+    }
+    
+    // profession or occupation
+    Element professionOrOccupation = description.getChild("professionOrOccupation", NS_GNDO);
+    if (professionOrOccupation != null) {
+      person.getProfessions().add(professionOrOccupation.getAttributeValue("resource", NS_RDF));
+    }
+    
+    // publications
+    // ...
+    
     if (person.getFirstname() == null && person.getSurname() == null) {
       // may be an organisation and no person
     } else {
       handleDifferentiatedPerson(person);
     }
   }
-  
+
   /**
    * Overridable method for further processing of a differentiated person.
    * Default: just print data to system out...

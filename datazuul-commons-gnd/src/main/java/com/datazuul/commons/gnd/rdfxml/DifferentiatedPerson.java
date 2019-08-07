@@ -1,6 +1,8 @@
 package com.datazuul.commons.gnd.rdfxml;
 
 import com.google.gson.Gson;
+import java.util.ArrayList;
+import java.util.List;
 
 class DifferentiatedPerson {
 
@@ -8,6 +10,9 @@ class DifferentiatedPerson {
   String dateOfDeath;
   String firstname;
   String gndIdentifier;
+  String placeOfBirthUrl;
+  String placeOfDeathUrl;
+  List<String> professions = new ArrayList();
   String surname;
 
   public String getDateOfBirth() {
@@ -34,20 +39,44 @@ class DifferentiatedPerson {
     this.firstname = firstname;
   }
 
-  public String getSurname() {
-    return surname;
-  }
-
-  public void setSurname(String surname) {
-    this.surname = surname;
-  }
-
   public String getGndIdentifier() {
     return gndIdentifier;
   }
 
   public void setGndIdentifier(String gndIdentifier) {
     this.gndIdentifier = gndIdentifier;
+  }
+
+  public String getPlaceOfBirthUrl() {
+    return placeOfBirthUrl;
+  }
+
+  public void setPlaceOfBirthUrl(String placeOfBirthUrl) {
+    this.placeOfBirthUrl = placeOfBirthUrl;
+  }
+
+  public String getPlaceOfDeathUrl() {
+    return placeOfDeathUrl;
+  }
+
+  public void setPlaceOfDeathUrl(String placeOfDeathUrl) {
+    this.placeOfDeathUrl = placeOfDeathUrl;
+  }
+
+  public List<String> getProfessions() {
+    return professions;
+  }
+
+  public void setProfessions(List<String> professions) {
+    this.professions = professions;
+  }
+
+  public String getSurname() {
+    return surname;
+  }
+
+  public void setSurname(String surname) {
+    this.surname = surname;
   }
 
   @Override

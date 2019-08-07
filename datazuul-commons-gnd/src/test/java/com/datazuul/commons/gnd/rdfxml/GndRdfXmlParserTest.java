@@ -1,15 +1,12 @@
 package com.datazuul.commons.gnd.rdfxml;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
-import org.junit.Ignore;
 
 public class GndRdfXmlParserTest {
   
@@ -43,13 +40,11 @@ public class GndRdfXmlParserTest {
     instance.parse(is);
   }
   
-//  @Ignore
   @Test
   public void testParseOfBigFile() throws Exception {
     System.out.println("parse big file");
-    InputStream is = new FileInputStream("/home/ralf/DEV/DATA/GNDkorr.rdf");
+    InputStream is = new FileInputStream("/mnt/DATA/dev/data/authorities-person_lds_20190613.rdf");
     GndRdfXmlParser instance = new GndRdfXmlParser();
     instance.parse(is);
   }
-  
 }
