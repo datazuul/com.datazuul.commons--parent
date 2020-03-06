@@ -1,12 +1,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.datazuul.commons</groupId>
-    <artifactId>parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <name>datazuul.com - DataZuul Commons</name>
-    <modules>
-        <module>datazuul-commons-cms</module>
-        <module>datazuul-commons-gnd</module>
-    </modules>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.datazuul.commons</groupId>
+  <artifactId>parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>datazuul.com - DataZuul Commons</name>
+  <modules>
+    <module>datazuul-commons-cms</module>
+    <module>datazuul-commons-gnd</module>
+  </modules>
+    
+  <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
 </project>
