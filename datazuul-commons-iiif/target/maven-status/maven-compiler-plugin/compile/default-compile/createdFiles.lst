@@ -1,0 +1,6 @@
+com/datazuul/commons/iiif/presentation/IiifManifestParser.class
+com/datazuul/commons/iiif/presentation/AbstractManifestParser.class
+com/datazuul/commons/iiif/presentation/GraciousManifestParser.class
+com/datazuul/commons/iiif/presentation/Thumbnail.class
+com/datazuul/commons/iiif/presentation/IiifImageApiVersion.class
+com/datazuul/commons/iiif/presentation/StrictManifestParser.class
