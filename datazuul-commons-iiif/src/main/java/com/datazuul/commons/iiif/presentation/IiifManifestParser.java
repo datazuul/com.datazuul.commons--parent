@@ -19,7 +19,7 @@ public class IiifManifestParser extends AbstractManifestParser {
 
     private static final StrictManifestParser strictManifestParser = new StrictManifestParser();
 
-    public DigitalObject toDigitalObject(URI manifestUri, int thumbnailWidth) throws IOException, TechnicalException {
+    public static DigitalObject toDigitalObject(URI manifestUri, int thumbnailWidth) throws IOException, TechnicalException {
         InputStream is;
         DigitalObject digitalObject = null;
         try {

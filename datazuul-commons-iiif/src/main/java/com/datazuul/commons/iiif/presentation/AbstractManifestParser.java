@@ -27,6 +27,8 @@ import java.util.Base64;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+
+import de.digitalcollections.model.identifiable.resource.LinkedDataFileResource;
 import org.apache.commons.io.FilenameUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,18 +45,20 @@ public abstract class AbstractManifestParser {
     // manifest file
     String encodedManifestUri = new String(Base64.getUrlEncoder().encode(manifestUri.toString().getBytes()));
     //    String encodedManifestUri = URLEncoder.encode(manifestUri.toString(), StandardCharsets.UTF_8);
-    FileResource manifestFileResource = null;
+    LinkedDataFileResource manifestFileResource = null;
     if (manifestFileResource == null) {
-      manifestFileResource = new ApplicationFileResource();
+      manifestFileResource = new LinkedDataFileResource();
       // String manifestUri = manifest.getIdentifier().toString();
       manifestFileResource.setUri(manifestUri);
       manifestFileResource.addIdentifier(Identifier.builder().namespace("uri-base64").id(encodedManifestUri).build());
       manifestFileResource.setFilename("manifest.json");
       manifestFileResource.setMimeType(MimeType.fromFilename("manifest.json"));
       manifestFileResource.setLabel(digitalObject.getLabel());
+
+      // get and set context
     }
     
-    digitalObject.getFileResources().add(manifestFileResource);
+    digitalObject.getLinkedDataResources().add(manifestFileResource);
   }
 
   protected Thumbnail createThumbnail(List<Size> sizes, String serviceUrl, boolean isV1) {
@@ -104,7 +108,7 @@ public abstract class AbstractManifestParser {
     return thumbnail;
   }
 
-  public InputStream getContentInputStream(URI uri) throws UnsupportedOperationException, IOException {
+  public static InputStream getContentInputStream(URI uri) throws UnsupportedOperationException, IOException {
     try {
       HttpClient client = HttpClient.newHttpClient();
       client.followRedirects();
