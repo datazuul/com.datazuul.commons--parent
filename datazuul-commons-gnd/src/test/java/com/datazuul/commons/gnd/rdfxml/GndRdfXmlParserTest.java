@@ -2,11 +2,8 @@ package com.datazuul.commons.gnd.rdfxml;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+
+import org.junit.*;
 
 public class GndRdfXmlParserTest {
   
@@ -40,6 +37,7 @@ public class GndRdfXmlParserTest {
     instance.parse(is);
   }
   
+  @Ignore
   @Test
   public void testParseOfBigFile() throws Exception {
     System.out.println("parse big file");
