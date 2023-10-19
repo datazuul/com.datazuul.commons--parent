@@ -7,7 +7,7 @@
   <name>datazuul.com - DataZuul Commons</name>
 
   <modules>
-    <module>datazuul-commons-cms</module>
+    <!-- <module>datazuul-commons-cms</module> -->
     <module>datazuul-commons-gnd</module>
     <module>datazuul-commons-iiif</module>
   </modules>
